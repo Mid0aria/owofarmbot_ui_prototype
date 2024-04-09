@@ -1,0 +1,46 @@
+body {
+    background-color: #222831;
+    color: #eee;
+}
+
+a {
+    color: #55aaff; /* Link color */
+}
+
+a:hover {
+    color: #66bbff; /* Hovered link color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:  #76ABAE; /* Heading text color */
+}
+
+p {
+    color: #EEEEEE; /* Paragraph text color */
+}
+
+.content {
+    overflow: hidden;
+}
+
+body {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.json-data {
+    background-color: #222;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace;
+    overflow-x: auto;
+}

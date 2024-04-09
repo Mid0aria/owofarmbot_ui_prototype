@@ -1,0 +1,21 @@
+{
+    "bot": {
+        "bot": "Bot",
+        "mainpage": "Anasayfa",
+        "settings": "Ayarlar",
+        "quit": "Botu Kapat"
+    },
+    "theme": {
+        "themes": "Temalar",
+        "light": "Açık",
+        "dark": "Koyu",
+        "halloween": "Cadılar Bayramı",
+        "vintage": "Nostaljik",
+        "readme": "Tema değiştiğinde lütfen botu yeniden başlatın!",
+        "changed": "Tema değişti. Bütün sayfalarda etkin olması için lütfen botu yeniden başlatın!"
+    },
+    "languages": "Diller",
+    "readme": "Beni Oku",
+    "welcome": "Hoşgeldiniz Efendim",
+    "test": "Test"
+}

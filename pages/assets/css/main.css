@@ -1,0 +1,27 @@
+.box {
+    width: 215px;
+    background-color: #090d1d;
+
+    margin: auto;
+    float: left;
+}
+
+.box h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.box h3 {
+    text-align: center;
+    color: #7b8a2a;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.box diva {
+    display: flex;
+    justify-content: space-around;
+}

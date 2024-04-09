@@ -1,0 +1,21 @@
+{
+    "bot": {
+        "bot": "Bot",
+        "mainpage": "Mainpage",
+        "settings": "Settings",
+        "quit": "Quit"
+    },
+    "theme": {
+        "themes": "Themes",
+        "light": "Light",
+        "dark": "Dark",
+        "halloween": "Halloween",
+        "vintage": "Vintage",
+        "readme": "Please restart the bot when the theme changes!",
+        "changed": "The theme has changed. Please restart the bot to make it active on all pages!"
+    },
+    "languages": "Languages",
+    "readme": "ReadME",
+    "welcome": "Welcome Sir",
+    "test": "Test"
+}

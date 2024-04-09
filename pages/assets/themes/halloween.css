@@ -1,0 +1,35 @@
+body {
+    background-color: #070F2B;
+}
+
+.box {
+    background-color: #090d1d;
+}
+
+.box h1 {
+    color: #ffffff;
+}
+
+.box h3 {
+    color: #7b8a2a;
+}
+
+p {
+    color: #9290C3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #535C91;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9290C3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: bold;
+}

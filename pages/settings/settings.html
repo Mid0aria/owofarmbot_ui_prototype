@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: rgb(51, 9, 22);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+</style>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../assets/css/switch.css" />
+        <link rel="stylesheet" href="../assets/css/rainbow.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+    </head>
+    <body>
+        <h1 class="rainbow" align="center">OwO Farm Bot V2.0.0</h1>
+
+        <div class="box">
+            <h1>Control</h1>
+            <h3>Start/Stop</h3>
+            <diva>
+                <label class="switch">
+                    <input id="start" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+
+        <div class="box">
+            <h1>Main</h1>
+            <h3>Hunt Battle</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.huntbattle) { %>
+                    <input id="huntbattle" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="huntbattle" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Ban Bypass</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.banbypass) { %>
+                    <input id="banbypass" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="banbypass" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Pray</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.pray) { %>
+                    <input id="pray" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="pray" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Curse</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.curse) { %>
+                    <input id="curse" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="curse" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Auto Quest</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.autoquest) { %>
+                    <input id="autoquest" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="autoquest" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+
+        <div class="box">
+            <h1>Main 2</h1>
+            <h3>Inventory Check</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.inventory.inventorycheck) { %>
+                    <input id="invcheck" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="invcheck" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Animals</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.animals.enable) { %>
+                    <input id="animals" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="animals" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Upgrade Auto Hunt</h3>
+            <diva>
+                <label class="switch">
+                    <% if (config.settings.upgradeautohunt.enable) { %>
+                    <input id="upgah" type="checkbox" checked />
+                    <%} else { %>
+                    <input id="upgah" type="checkbox" />
+                    <% } %>
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+
+        <div class="box">
+            <h1>Inventory Check</h1>
+            <h2 style="font-size: 22px">(use if inventory check is enabled)</h2>
+            <h3>Gem Check</h3>
+            <diva>
+                <label class="switch">
+                    <input id="gemcheck" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Lootbox Check</h3>
+            <diva>
+                <label class="switch">
+                    <input id="lbcheck" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Fabled LootBox Check</h3>
+            <diva>
+                <label class="switch">
+                    <input id="flbcheck" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Crate Check</h3>
+            <diva>
+                <label class="switch">
+                    <input id="cratecheck" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Event Check</h3>
+            <diva>
+                <label class="switch">
+                    <input id="eventcheck" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+
+        <div class="box">
+            <h1>Gamble</h1>
+            <h3>CoinFlip</h3>
+            <diva>
+                <label class="switch">
+                    <input id="cf" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Slots</h3>
+            <diva>
+                <label class="switch">
+                    <input id="slots" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+
+        <div class="box">
+            <h1>Options</h1>
+            <h3>Discord RPC</h3>
+            <diva>
+                <label class="switch">
+                    <input id="drpc" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+            <h3>Extra Token</h3>
+            <diva>
+                <label class="switch">
+                    <input id="extratoken" type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </diva>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var huntbattle = document.querySelector('input[id="huntbattle"]');
+        var banbypass = document.querySelector('input[id="banbypass"]');
+        var pray = document.querySelector('input[id="pray"]');
+        var curse = document.querySelector('input[id="curse"]');
+        var autoquest = document.querySelector('input[id="autoquest"]');
+        var drpc = document.querySelector('input[id="drpc"]');
+        huntbattle.addEventListener("change", function () {
+            if (huntbattle.checked) {
+                console.log("HuntBattle = True");
+                postdata("huntbattle", true);
+            } else {
+                console.log("HuntBattle = False");
+                postdata("huntbattle", false);
+            }
+        });
+        banbypass.addEventListener("change", function () {
+            if (banbypass.checked) {
+                console.log("BanBypass = True");
+                postdata("banbypass", true);
+            } else {
+                console.log("BanBypass = False");
+                postdata("banbypass", false);
+            }
+        });
+        pray.addEventListener("change", function () {
+            if (pray.checked) {
+                console.log("pray = True");
+                postdata("pray", true);
+            } else {
+                console.log("pray = False");
+                postdata("pray", false);
+            }
+        });
+        curse.addEventListener("change", function () {
+            if (curse.checked) {
+                console.log("curse = True");
+                postdata("curse", true);
+            } else {
+                console.log("curse = False");
+                postdata("curse", false);
+            }
+        });
+        autoquest.addEventListener("change", function () {
+            if (autoquest.checked) {
+                console.log("autoquest = True");
+                postdata("autoquest", true);
+            } else {
+                console.log("autoquest = False");
+                postdata("autoquest", false);
+            }
+        });
+        drpc.addEventListener("change", function () {
+            if (drpc.checked) {
+                console.log("drpc = True");
+                postdata("drpc", true);
+            } else {
+                console.log("drpc = False");
+                postdata("drpc", false);
+            }
+        });
+    });
+
+    function postdata(t, s) {
+        fetch("http://localhost/config", {
+            method: "POST",
+            body: JSON.stringify({
+                type: t,
+                status: s,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        });
+    }
+
+    /*
+    setInterval(function () {
+        console();
+    }, 2000);
+    function console() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("console").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "console", true);
+        xhttp.send();
+    }*/
+</script>

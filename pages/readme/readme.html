@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <link rel="stylesheet" type="text/css" href="readme.css">
+</head>
+<body>
+<p>dWdnY2Y6Ly9iY3JhLmZjYmd2c2wucGJ6L2dlbnB4LzVwc2tIZ1B4Y3hQVkVlWGxxVVhGb1kgcm90MTM= </br>
+    6 28 15 26 15<br> {/__/}</br>( • . •)</br>/ &gt; 🤍
+</p>
+<p>If you make a video about using the farmbot, upload it to YouTube with the hashtag #thankumid0 and let me know.</p>
+<h1 align="center">OwO Farm Bot V1.0.6.6</h1>
+<p align="center">
+    <a href="https://github.com/Mid0aria/owofarmbot"><img src="https://hits.sh/github.com/Mid0aria/owofarmbot.svg?view=today-total&label=Repo%20Today/Total%20Views&color=770ca1&labelColor=007ec6"/></a>
+    <a href="https://github.com/Mid0aria/owofarmbot"><img src="https://img.shields.io/github/last-commit/mid0aria/owofarmbot" /></a><br>
+    Tutorial needed? <a href="https://youtu.be/sso05qx8Hac">Click Here</a><br>
+    Tutorial 2 (replit) <a href="https://www.youtube.com/watch?v=tiSd99NEhb4">Click Here</a> (Thanks Hiếu LoneLy)<br>
+    Do you need help? <a href ="https://discord.gg/WzYXVbXt6C">Join Discord Server</a>
+</p>
+<h1 id="contents">Contents</h1>
+<p><a href="#star-history">⭐・Star History</a><br>
+    <a href="#important">❗・Important</a><br>
+    <a href="#features">👑・Features</a><br>
+    <a href="#configjson-example">⚙・Config.json example</a><br>
+    <a href="#dotenv-example">⚙・.env example</a><br>
+    <a href="#get-token">💎・Get Token</a><br>
+    <a href="#owo-dm-channel-id">📍・OwO DM channel id</a><br>
+    <a href="#discord-rpc">📚・Discord RPC</a><br>
+    <a href="#captcha-alert">⚠️・Captcha Alert</a><br>
+    <a href="#socket-client">📡・Socket Client</a><br>
+    <a href="#required-links">🔗・Required Links</a><br>
+    <a href="#usage">🎈・Usage</a><br>
+    <a href="#thanks-for-contribution">🥰・Thanks for contribution</a><br>
+</p>
+<h2 id="-star-history">⭐・Star History</h2>
+<p>
+<h2 align="center">Goal: <a href="https://github.com/Mid0aria/owofarmbot/stargazers"><img src="https://img.shields.io/github/stars/Mid0aria/owofarmbot" /></a> / 512</h2>
+⭐⭐⭐ You can also give this repository a star to show more people and they can use this repository<br></p>
+<p><a href="https://star-history.com/#Mid0aria/owofarmbot&amp;mid0aria/owofarmbotv2&amp;Date"><img src="https://api.star-history.com/svg?repos=Mid0aria/owofarmbot,mid0aria/owofarmbotv2&amp;type=Date" alt="Star History Chart"></a></p>
+<h2 id="-important">❗・Important</h2>
+<ul>
+    <li>We would like to point out that long-term use of farm bots may result in a ban from owo and we do not accept responsibility.</li>
+    <li>Discord may restart as a result of discord rpc overload.</li>
+    <li>It can detect virus due to captcha(ban) bypasser please turn off your antivirus.</li>
+</ul>
+<h2 id="-features">👑・Features</h2>
+<ul>
+    <li>Auto Hunt</li>
+    <li>Auto Battle</li>
+    <li>
+        Inventory Check
+        <ul>
+            <li>Auto Gem Use (beta)</li>
+            <li>Auto Lootbox Use</li>
+            <li>Auto Fabled Lootbox Use</li>
+            <li>Auto Crate Use</li>
+            <li>Auto Eventbox Use (like anniversary present or valentine&#39;s day)</li>
+        </ul>
+    </li>
+    <li>
+        Auto Gamble
+        <ul>
+            <li>Auto Coinflip</li>
+            <li>Auto Slots</li>
+        </ul>
+    </li>
+    <li>Auto Animals Sell OR Sacrifice,</li>
+    <li>Auto Upgrade Autohunt</li>
+    <li>Auto Pray</li>
+    <li>
+        Auto CheckList (beta)
+        <ul>
+            <li>Auto Quest</li>
+            <li>Auto Daily</li>
+            <li>Auto Cookie</li>
+        </ul>
+    </li>
+    <li>Captcha(Ban) Protection v0.1.8 (beta)</li>
+    <li>Discord-RPC</li>
+    <li>Typing Indicator</li>
+    <li>
+        <strong>Extra Token</strong>
+        <ul>
+            <li>All Main Token Features</li>
+            <li>Auto Pray for Main Token</li>
+        </ul>
+    </li>
+</ul>
+<h2 id="-config-json-example">⚙・config.json example</h2>
+<div class="json-data">
+<pre><code>{
+    <span class="hljs-string">"windowssettings"</span>: { <span class="hljs-string">"controlcdetect"</span>: <span class="hljs-literal">false</span> },
+    <span class="hljs-string">"settings"</span>: {
+        <span class="hljs-string">"times"</span>: {
+            <span class="hljs-string">"enable"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"huntbottom"</span>: <span class="hljs-number">11000</span>,  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds. Minimum <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> hunt command.
+            <span class="hljs-string">"hunttop"</span>: <span class="hljs-number">16000</span>, / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds. Maximum <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> hunt command.
+            <span class="hljs-string">"battlebottom"</span>: <span class="hljs-number">10000</span>,  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds. Minimum <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> battle command.
+            <span class="hljs-string">"battletop"</span>: <span class="hljs-number">16000</span>, / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds. Maximum <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> <span class="hljs-built_in">run</span> battle command.
+
+            <span class="hljs-string">"intervals"</span>: {
+                <span class="hljs-string">"huntbattle"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"time"</span>: <span class="hljs-number">17000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                },
+                <span class="hljs-string">"animals"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"time"</span>: <span class="hljs-number">1200000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                },
+                <span class="hljs-string">"pray"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"time"</span>: <span class="hljs-number">303000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                },
+                <span class="hljs-string">"curse"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"time"</span>: <span class="hljs-number">303500</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                },
+                <span class="hljs-string">"upgrade"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"time"</span>: <span class="hljs-number">1205000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                },
+                <span class="hljs-string">"gamble"</span>: {
+                    <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                    <span class="hljs-string">"coinflip"</span>: {
+                        <span class="hljs-string">"time"</span>: <span class="hljs-number">25000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                    },
+                    <span class="hljs-string">"slots"</span>: {
+                        <span class="hljs-string">"time"</span>: <span class="hljs-number">23000</span>  / The <span class="hljs-built_in">time</span> <span class="hljs-keyword">to</span> be entered must be entered <span class="hljs-keyword">in</span> milliseconds.
+                    }
+                }
+            }
+        },
+        <span class="hljs-string">"prefix"</span>: <span class="hljs-string">""</span>, owo bot's prefix <span class="hljs-keyword">on</span> your server
+        <span class="hljs-string">"huntandbattle"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"banbypass"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"discordrpc"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"typingindicator"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"pray"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"extratoken"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"autoquest"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        <span class="hljs-string">"inventory"</span>: {
+            <span class="hljs-string">"inventorycheck"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"gemcheck"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"lootboxcheck"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"fabledlootboxcheck"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"cratecheck"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"eventcheck"</span>: <span class="hljs-string">""</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+        },
+        <span class="hljs-string">"animals"</span>: {
+            <span class="hljs-string">"enable"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"type"</span>: <span class="hljs-string">""</span> sell <span class="hljs-keyword">or</span> sacrifice
+            <span class="hljs-string">"animaltype"</span>: {
+                <span class="hljs-string">"common"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"uncommon"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"rare"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"epic"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"mythical"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"patreon"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"cpatreon"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"legendary"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"gem"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"bot"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"distorted"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"fabled"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"special"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"hidden"</span>: <span class="hljs-string">""</span> <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            }
+        },
+        <span class="hljs-string">"upgradeautohunt"</span>: {
+            <span class="hljs-string">"enable"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+            <span class="hljs-string">"type"</span>: <span class="hljs-string">""</span> efficiency, duration, cost, gain, exp <span class="hljs-keyword">or</span> radar
+        },
+        <span class="hljs-string">"gamble"</span>: {
+            <span class="hljs-string">"coinflip"</span>: {
+                <span class="hljs-string">"default_amount"</span>= , Enter <span class="hljs-keyword">the</span> amount you want <span class="hljs-keyword">to</span> start <span class="hljs-keyword">from</span>
+                <span class="hljs-string">"max_amount"</span>: <span class="hljs-number">250000</span>, Enter <span class="hljs-keyword">the</span> amount <span class="hljs-keyword">where</span> <span class="hljs-keyword">the</span> bot will <span class="hljs-keyword">not</span> bet more than <span class="hljs-keyword">that</span>
+                <span class="hljs-string">"multipler"</span>: , Enter a <span class="hljs-built_in">number</span> <span class="hljs-keyword">by</span> which <span class="hljs-keyword">the</span> lost amount will be multipled <span class="hljs-keyword">by</span>
+                <span class="hljs-string">"enable"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"amount"</span>: <span class="hljs-string">"1"</span>
+            },
+            <span class="hljs-string">"slots"</span>: {
+                <span class="hljs-string">"enable"</span>: <span class="hljs-string">""</span>, <span class="hljs-literal">true</span> <span class="hljs-keyword">or</span> <span class="hljs-literal">false</span>
+                <span class="hljs-string">"amount"</span>: <span class="hljs-string">"1"</span>
+            }
+        }
+    },
+    <span class="hljs-string">"main"</span>:{
+        <span class="hljs-string">"token"</span>:<span class="hljs-string">""</span>, main token (<span class="hljs-keyword">if</span> you use replit please edit .env <span class="hljs-built_in">file</span>)
+        <span class="hljs-string">"userid"</span>:<span class="hljs-string">""</span>, token user <span class="hljs-built_in">id</span>
+        <span class="hljs-string">"channelid"</span>:<span class="hljs-string">""</span>, channel <span class="hljs-built_in">id</span> <span class="hljs-keyword">for</span> main token
+        <span class="hljs-string">"owodmchannelid"</span>:<span class="hljs-string">""</span>, owo bot dm channel <span class="hljs-built_in">id</span>
+        <span class="hljs-string">"gamblechannelid"</span>:<span class="hljs-string">""</span>, channel <span class="hljs-keyword">if</span> <span class="hljs-keyword">for</span> gambling
+        <span class="hljs-string">"autoquestchannelid"</span>:<span class="hljs-string">""</span> auto quest channel <span class="hljs-built_in">id</span>
+    },
+    <span class="hljs-string">"extra"</span>:{
+        <span class="hljs-string">"token"</span>:<span class="hljs-string">""</span>, extra token (<span class="hljs-keyword">if</span> you use replit please edit .env <span class="hljs-built_in">file</span>)
+        <span class="hljs-string">"userid"</span>:<span class="hljs-string">""</span>, extra token user <span class="hljs-built_in">id</span>
+        <span class="hljs-string">"channelid"</span>:<span class="hljs-string">""</span>, channel <span class="hljs-built_in">id</span> <span class="hljs-keyword">for</span> extra token
+        <span class="hljs-string">"gamblechannelid"</span>:<span class="hljs-string">""</span>, channel <span class="hljs-keyword">if</span> <span class="hljs-keyword">for</span> gambling
+        <span class="hljs-string">"owodmchannelid"</span>:<span class="hljs-string">""</span> extra token owo bot dm channel <span class="hljs-built_in">id</span>
+    }
+}
+</code></pre>
+</div>
+
+
+<h2 id="-dotenv-example">⚙・dotenv example</h2>
+<p>If you use replit, you must enter your tokens in the .env file for the security of your tokens!</p>
+<pre><code><span class="hljs-attr">MAIN_TOKEN</span>=mysupermaintokenblabla
+<span class="hljs-attr">EXTRA_TOKEN</span>=mysuperextratokenblabla
+</code></pre>
+<h2 id="-get-token">💎・Get Token</h2>
+<pre><code class="lang-js">(<span class="hljs-name">webpackChunkdiscord_app.push</span>([
+    [<span class="hljs-string">""</span>],
+    {},
+    (<span class="hljs-name">e</span>) =&gt; {
+        m = []<span class="hljs-comment">;</span>
+        for (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> c in e.c) m.push(<span class="hljs-name">e.c</span>[<span class="hljs-name">c</span>])<span class="hljs-comment">;</span>
+    },
+]),
+m)
+    .find((<span class="hljs-name">m</span>) =&gt; m?.exports?.default?.getToken !== void <span class="hljs-number">0</span>)
+    .exports.default.getToken()<span class="hljs-comment">;</span>
+</code></pre>
+<h2 id="-owo-dm-channel-id">📍・OwO DM channel id</h2>
+<p><img src="https://raw.githubusercontent.com/Mid0aria/owofarmbot/main/images/owochannelid.jpg" alt=""></p>
+<h2 id="-discord-rpc">📚・Discord RPC</h2>
+<p><img src="https://raw.githubusercontent.com/Mid0aria/owofarmbot/main/images/rpc.jpg" alt=""></p>
+<h2 id="-captcha-alert">⚠️・Captcha Alert</h2>
+<p>!!! If you want the captcha alert to work properly, turn off do not disturb</p>
+<p><img src="https://raw.githubusercontent.com/Mid0aria/owofarmbot/main/images/captchaalert.png" alt=""></p>
+<h2 id="-socket-client">📡・Socket Client</h2>
+<p><img src="https://raw.githubusercontent.com/Mid0aria/owofarmbot/main/images/socketclient.png" alt=""></p>
+<h2 id="-required-links">🔗・Required Links</h2>
+<p><a href="https://nodejs.org/en/">NodeJS</a><br>
+    <a href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701">Terminal</a><br>
+    <a href="https://github.com/Mid0aria/owofarmbot/archive/refs/heads/main.zip">Farm Bot Zip File</a>
+</p>
+<h2 id="-usage">🎈・Usage</h2>
+<pre><code>&gt; YOU NEED LATEST NODEJS !
+&gt; download <span class="hljs-keyword">zip</span> <span class="hljs-keyword">file</span> or <span class="hljs-keyword">run</span> git clone https:<span class="hljs-comment">//github.com/Mid0aria/owofarmbot.git</span>
+&gt; <span class="hljs-keyword">edit</span> config.json
+</code></pre>
+<pre><code class="lang-bash">&gt; <span class="hljs-keyword">type</span> <span class="hljs-type">npm </span>install
+</code></pre>
+<pre><code class="lang-bash">&gt; <span class="hljs-keyword">type</span> <span class="hljs-keyword">node</span> <span class="hljs-title">bot</span>.js
+</code></pre>
+<h2 id="-thanks-for-contribution">🥰・Thanks for contribution</h2>
+<p>VihaanReddyM <a href="https://github.com/VihaanReddyM">(Github)</a><br>
+    Random-629671 <a href="https://github.com/Random-629671">(Github)</a><br>
+    Le-Khuong <a href="https://github.com/Le-Khuong">(Github)</a><br>
+    mallusrgreatv2 <a href="https://github.com/mallusrgreatv2">(Github)</a><br>
+</p>
+<p>Hiếu LoneLy <a href="https://www.youtube.com/watch?v=tiSd99NEhb4">(Youtube)</a></p>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+input[type="number"]:disabled {
+    background-color: #f3f3f3;
+    opacity: 0.5;
+}
+
+input[type="number"]:enabled {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+label {
+    color: #76abae;
+}
+
+label[for="timings-switch"] {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+
+input[type="number"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* adjust as needed */
+}
+
+input[type="number"] {
+    width: 10%; /* adjust as needed */
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* reduced size */
+    height: 20px; /* reduced size */
+    margin-left: 10px; /* space between the label and the switch */
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* reduced size */
+    width: 16px; /* reduced size */
+    left: 2px; /* adjusted position */
+    bottom: 2px; /* adjusted position */
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+label[for="timings-switch"],
+label[for="animals-switch"],
+label[for="intervals-title"] {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+.dim {
+    opacity: 0.5;
+}
+
+#intervals-title {
+    font-size: 24px; /* Adjust this value to match the size of the "Animals" and "Timings" titles */
+    text-align: center; /* Center the title */
+}
+
+#intervals-popup {
+    font-size: 1em; /* Make the button smaller */
+    display: block; /* Make the button a block element */
+    /* Center the button */
+    /* Add some space above the button */
+    margin: 10px auto auto;
+}

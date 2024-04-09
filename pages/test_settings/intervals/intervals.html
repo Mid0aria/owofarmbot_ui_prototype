@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Edit the Intervals</title>
+        <!-- <link rel="stylesheet" id="theme-alt" /> -->
+        <link
+            rel="stylesheet"
+            id="theme-alt-alt"
+            type="text/css"
+            href="../../assets/themes/dark.css"
+        />
+        <script src="../../../preload.js"></script>
+        <style>
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            label {
+                color: #d31111;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <p>The time to be entered must be entered in milliseconds.</p>
+            <form>
+                <label for="huntbattle">Huntbattle:</label><br />
+                <input type="number" id="huntbattle" name="huntbattle" /><br />
+                <label for="animals">Animals:</label><br />
+                <input type="number" id="animals" name="animals" /><br />
+                <label for="pray">Pray:</label><br />
+                <input type="number" id="pray" name="pray" /><br />
+                <label for="curse">Curse:</label><br />
+                <input type="number" id="curse" name="curse" /><br />
+                <label for="upgrade">Upgrade:</label><br />
+                <input type="number" id="upgrade" name="upgrade" /><br />
+                <label for="coinflip">Coinflip:</label><br />
+                <input type="number" id="coinflip" name="coinflip" /><br />
+                <label for="slots">Slots:</label><br />
+                <input type="number" id="slots" name="slots" /><br />
+                <button type="button" onclick="saveAndExit(); window.close();">
+                    Save and Exit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

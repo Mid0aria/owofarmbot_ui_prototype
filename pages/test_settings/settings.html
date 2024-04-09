@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Settings</title>
+        <!-- <link rel="stylesheet" id="theme-alt" type="text/css" href="../assets/themes/dark.css"> -->
+        <link rel="stylesheet" id="theme-alt" />
+        <script src="../../preload.js"></script>
+        <link rel="stylesheet" type="text/css" href="./settings.css" />
+    </head>
+    <body>
+        <div class="switch-container">
+            <label for="timings-switch">Timings:</label>
+            <div class="switch">
+                <input
+                    type="checkbox"
+                    id="timings-switch"
+                    onchange="toggleInputs()"
+                />
+                <span class="slider round"></span>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="huntbottom-input">huntbottom:</label>
+            <input type="number" id="huntbottom-input" disabled />
+        </div>
+
+        <div class="input-container">
+            <label for="hunttop-input">hunttop:</label>
+            <input type="number" id="hunttop-input" disabled />
+        </div>
+
+        <div class="input-container">
+            <label for="battlebottom-input">battlebottom:</label>
+            <input type="number" id="battlebottom-input" disabled />
+        </div>
+
+        <div class="input-container">
+            <label for="battletop-input">battletop:</label>
+            <input type="number" id="battletop-input" disabled />
+        </div>
+
+        <!-- New "Intervals" title and "Edit" button -->
+        <h1 id="intervals-title">Intervals</h1>
+        <button id="intervals-popup">Edit</button>
+
+        <!-- "Animals" switch container -->
+        <div class="switch-container">
+            <label for="animals-switch">Animals:</label>
+            <div class="switch">
+                <input type="checkbox" id="animals-switch" />
+                <span class="slider round"></span>
+            </div>
+        </div>
+
+        <!-- Dropdown for "Type" -->
+        <div class="dropdown-container">
+            <label for="type-dropdown">Type:</label>
+            <select id="type-dropdown">
+                <option value="sell">Sell</option>
+                <option value="sacrifice">Sacrifice</option>
+            </select>
+        </div>
+
+        <!-- Paragraph and checkboxes for animal types -->
+        <p>Please select the animals you want to sell/sac:</p>
+        <div class="checkbox-container">
+            <input type="checkbox" id="common" />
+            <label for="common">Common</label>
+            <input type="checkbox" id="uncommon" />
+            <label for="uncommon">Uncommon</label>
+            <input type="checkbox" id="rare" />
+            <label for="rare">Rare</label>
+            <input type="checkbox" id="epic" />
+            <label for="epic">Epic</label>
+            <input type="checkbox" id="mythical" />
+            <label for="mythical">Mythical</label>
+            <input type="checkbox" id="patreon" />
+            <label for="patreon">Patreon</label>
+            <input type="checkbox" id="cpatreon" />
+            <label for="cpatreon">CPatreon</label>
+            <input type="checkbox" id="legendary" />
+            <label for="legendary">Legendary</label>
+            <input type="checkbox" id="gem" />
+            <label for="gem">Gem</label>
+            <input type="checkbox" id="bot" />
+            <label for="bot">Bot</label>
+            <input type="checkbox" id="distorted" />
+            <label for="distorted">Distorted</label>
+            <input type="checkbox" id="fabled" />
+            <label for="fabled">Fabled</label>
+            <input type="checkbox" id="special" />
+            <label for="special">Special</label>
+            <input type="checkbox" id="hidden" />
+            <label for="hidden">Hidden</label>
+        </div>
+        <script src="./settings.js"></script>
+    </body>
+</html>

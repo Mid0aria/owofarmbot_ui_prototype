@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>💖UwU💖</title>
+
+        <!-- Tema için CSS -->
+        <link rel="stylesheet" id="theme" />
+        <script src="../preload.js"></script>
+    </head>
+    <body>
+        <h1 align="center">OwO Farm Bot V2</h1>
+        <h1 align="center" id="welcome"></h1>
+        <button id="toggleButton" class="start">Start</button>
+    </body>
+
+    <style>
+        .start,
+        .stop {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .stop {
+            background-color: #dc3545;
+        }
+    </style>
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+
+        let isRunning = false;
+
+        function toggleButtonState() {
+            isRunning = !isRunning;
+
+            if (isRunning) {
+                toggleButton.textContent = "Stop";
+                toggleButton.classList.remove("start");
+                toggleButton.classList.add("stop");
+            } else {
+                toggleButton.textContent = "Start";
+                toggleButton.classList.remove("stop");
+                toggleButton.classList.add("start");
+            }
+        }
+
+        toggleButton.addEventListener("click", toggleButtonState);
+    </script>
+</html>
